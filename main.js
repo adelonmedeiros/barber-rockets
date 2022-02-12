@@ -16,3 +16,4 @@ for (const element of links) {
     nav.classList.remove("show");
   });
 }
+

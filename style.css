@@ -25,11 +25,11 @@ ul {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 240;
+  --hue: 389;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 50% 60%);
+  --base-color: hsl(var(--hue) 70% 20%);
   --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --base-color-alt: hsl(var(--hue) 47% 33%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
@@ -71,8 +71,16 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 36%, 57%, 1) 0%,
-    hsla(var(--hue), 65%, 88%, 0.34) 100%
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
+  );
+}
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1)
   );
 }
 /* =============== LAYOUT =============== */
@@ -91,8 +99,21 @@ body {
   padding: 5rem 0;
 }
 
+.section .title {
+  margin-bottom: 1rem;
+}
+
+.section header {
+  margin-bottom: 4rem;
+}
+
+.section header strong {
+  color: var(--var-color);
+}
+
 #header {
   border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
   display: flex;
 
   width: 100%;
@@ -133,7 +154,7 @@ nav ul li {
 }
 
 nav ul li a {
-  transition: 0.3s;
+  transition: color 0.2s;
   position: relative;
 }
 
@@ -172,7 +193,7 @@ nav.show .menu {
 
   height: 100vh;
   width: 100vw;
-
+ 
   position: fixed;
   top: 0;
   left: 0;
@@ -202,14 +223,14 @@ nav .icon-close {
   position: absolute;
   right: 1.5rem;
 
-  /* top: -1.5rem;
-  transition: 0.2s; */
+  top: -1.5rem;
+  transition: 0.2s;
 }
 
 nav.show div.icon-close {
   visibility: visible;
   opacity: 1;
-  /* top: 1.5rem; */
+  top: 1.5rem;
 }
 
 
@@ -260,3 +281,42 @@ nav.show div.icon-close {
 #home .text p {
   margin-bottom: 2rem;
 }
+
+/* =============== ABOUT =============== */
+#about {
+  background: white;
+}
+#about .container {
+  margin: 0;
+}
+
+#about .image {
+  position: relative;
+}
+
+#about .image::before {
+  content: "";
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  width: 100%;
+  height: 100%;
+  background: var(--base-color-second);
+  z-index: 0;
+}
+
+#about .image img {
+  position: relative;
+}
+
+#about .image img,
+#about .image img::before {
+  border-radius: 0.5rem;
+}
+
+#about .text {
+  margin-left: 1.5rem; /* 1.5rem = 24px */
+  margin-right: 1.5rem;
+}
+
+/* =============== Services =============== */
