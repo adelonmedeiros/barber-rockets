@@ -17,3 +17,15 @@ for (const element of links) {
   });
 }
 
+const header = document.querySelector("#header"); // get the header
+const navHeight = header.offsetHeight; // get the height of the header
+
+window.addEventListener("scroll", function () {
+  // add an event listener to the window
+  if (this.window.scrollY >= navHeight) {
+    // if the window is scrolled more than the height of the header
+    header.classList.add("scroll");
+  } else {
+    header.classList.remove("scroll"); // remove the class
+  }
+});
