@@ -147,7 +147,7 @@ body {
 
 .logo span {
   color: var(--base-color);
-}
+} 
 
 .logo-alt span {
   color: var(--body-color);
@@ -463,7 +463,7 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
-/* ===============  =============== */
+/* ===============footer=============== */
 footer {
   background: var(--base-color);
 }
@@ -471,6 +471,7 @@ footer {
 footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
+  color: black;
 }
 
 footer .brand p {
@@ -480,5 +481,10 @@ footer .brand p {
 
 footer i {
   font-size: 1.5rem;
-  color: var (--text-color-light);
+  color: var(--text-color-light);
+}
+
+footer .social {
+    grid-auto-flow: column;
+    
 }
