@@ -2,7 +2,6 @@
 ## Acesse aqui: https://adelonmedeiros.github.io/barber-rockets/
 
 ![image](https://user-images.githubusercontent.com/38088372/159190876-3b8f312a-0ae4-47d4-b66d-26ff38c9e5b1.png)
-![image](https://user-images.githubusercontent.com/38088372/159190915-2f0a2fe8-b445-46c4-99ee-67b8e067a35f.png)
 
 ## 🚀 Tecnologias
 
